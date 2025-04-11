@@ -4,9 +4,9 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-TWILIO_ACCOUNT_SID = "ACab0920dfa265f2a7577f41f884eeb337"
-TWILIO_AUTH_TOKEN = "081601d555a6f4ed6a0432e8cd5b419f"
-TWILIO_PHONE_NUMBER = "+17173784639"
+TWILIO_ACCOUNT_SID = "account sid"
+TWILIO_AUTH_TOKEN = "auth id"
+TWILIO_PHONE_NUMBER = "number"
 
 
 def send_mobile(phone_number, message=False, otp=False):
@@ -48,8 +48,8 @@ def send_email(to_email, subject=False, message=False):
         message = f"The OTP for mail Verification of TMBL Online Bank System is {otp}."
 
     message += "\n\nPlease don't reply to this mail."
-    from_email = "online.bank.system.amrita@gmail.com"
-    email_password = "hnlrusdbnbomteat"
+    from_email = "your email"
+    email_password = "secure passward from google"
 
     msg = MIMEMultipart()
     msg['From'] = from_email
